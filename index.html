@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+  <title>Toggle inhoud met checkbox</title>
+   <meta name="author" content="Theo den Blanken">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+      #venster {
+         display: none;
+      }
+      #toggle:checked ~ #venster {
+         display: block;
+      }
+      #toggle {
+         /* display:none; */
+      }
+      label {
+         display: inline-block;
+         padding: 1em;
+         background: dodgerblue;
+         cursor: pointer;
+      }
+   </style>
+</head>
+
+<body lang="nl">
+
+  <input type="checkbox" id="toggle">
+
+  <div id="venster">
+     <h3>Dit is een venster</h3>
+     <p>Dat met de checkbox verborgen of getoond kan worden.
+     </p>
+  </div>
+  <label for="toggle">Toggle de inhoud</label>
+
+</body>
+</html>
